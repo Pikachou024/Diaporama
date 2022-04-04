@@ -1,0 +1,45 @@
+.ListImages img {
+  display: none;
+}
+
+.ListImages img.affiche {
+  display: block;
+}
+
+.HeaderPuce {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.HeaderPuce .HeaderPuce01,
+.HeaderPuce .HeaderPuce02,
+.HeaderPuce .HeaderPuce03,
+.HeaderPuce .HeaderPuce04,
+.HeaderPuce .HeaderPuce05,
+.HeaderPuce .HeaderPuce06,
+.HeaderPuce .HeaderPuce07 {
+  margin: 30px;
+  height: 10px;
+  width: 10px;
+  background-color: red;
+  border-radius: 50px;
+}
+
+.SectionPictures,
+.SectionButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=styles.css.map */
