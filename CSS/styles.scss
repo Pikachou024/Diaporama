@@ -1,4 +1,10 @@
+.body {
+    max-width: 750px;
+}
+
 .ListImages img {
+    min-width: 300px;
+    max-width: 100%;
     display: none;
 }
 
@@ -6,34 +12,63 @@
     display: block;
 }
 
-// .cache {
-//     display: none
-// }
+.SectionButton-pause .cache {
+    display: none;
+}
 
-.HeaderPuce {
+
+
+nav.HeaderPuce {
     display: flex;
     flex-direction: row;
     justify-content: center;
 
-    .HeaderPuce01,
-    .HeaderPuce02,
-    .HeaderPuce03,
-    .HeaderPuce04,
-    .HeaderPuce05,
-    .HeaderPuce06,
-    .HeaderPuce07 {
-        margin: 30px;
-        height: 10px;
-        width: 10px;
-        background-color: red;
-        border-radius: 50px;
-    }
 }
 
+.HeaderPuce div {
+    margin: 10px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    background-color: black;
+}
 
 
 .SectionPictures,
 .SectionButton {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+    // .SectionFleche-droite .order1 {
+    //     order: 1;
+    // }
+}
+
+
+
+
+.fa-circle-play,
+.fa-circle-pause {
+    margin-right: 20px;
+    margin-left: 20px;
+    padding-top: 15px;
+    // padding-right: 15px;
+    transform: scale(2);
+}
+
+.fa-arrow-right,
+.fa-arrow-left {
+    padding: 30px;
+    transform: scale(3);
+}
+
+.blue {
+    background-color: blue;
+}
+
+.SectionButton-play .HeaderPuce div.blue {
+    background-color: blue;
 }
