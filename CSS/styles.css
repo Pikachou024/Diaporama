@@ -12,10 +12,6 @@
   display: block;
 }
 
-.SectionButton-pause .cache {
-  display: none;
-}
-
 nav.HeaderPuce {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -37,6 +33,7 @@ nav.HeaderPuce {
   background-color: black;
 }
 
+.SectionFleche,
 .SectionPictures,
 .SectionButton {
   display: -webkit-box;
@@ -61,18 +58,17 @@ nav.HeaderPuce {
           transform: scale(2);
 }
 
-.fa-arrow-right,
+.SectionFleche {
+  padding: 20px 0 30px 0;
+}
+
+.fa-arrow-right {
+  -webkit-transform: translateX(20px) scale(3);
+          transform: translateX(20px) scale(3);
+}
+
 .fa-arrow-left {
-  padding: 30px;
-  -webkit-transform: scale(3);
-          transform: scale(3);
-}
-
-.blue {
-  background-color: blue;
-}
-
-.SectionButton-play .HeaderPuce div.blue {
-  background-color: blue;
+  -webkit-transform: translateX(-20px) scale(3);
+          transform: translateX(-20px) scale(3);
 }
 /*# sourceMappingURL=styles.css.map */

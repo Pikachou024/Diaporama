@@ -1,16 +1,7 @@
-// let largeur = innerWidth;
-// if (innerWidth <= 705) {
-//     console.log(innerWidth);
-// document.querySelector(".SectionFleche-gauche").classList.toggle("order1")
-// }
-// else {
-//     document.querySelector(".SectionFleche-gauche").classList.toggle("order1")
-// }
+let mainindex = 0
 
-let mainindex
-mainindex = 0
+console.log(mainindex);
 let tableauPictures = document.querySelectorAll(".ListImages img")
-
 let arret;
 let image;
 image = document.querySelector(".image01");
@@ -42,6 +33,9 @@ let FlecheGauche;
 FlecheGauche = document.querySelector(".SectionFleche-gauche");
 FlecheGauche.addEventListener("click", AfficheCacheG);
 
+if (mainindex == 0) {
+    FlecheGauche.removeEventListener("click", AfficheCacheG)
+}
 function AfficheCacheG() {
     mainindex--
     afficheImage()
@@ -49,7 +43,6 @@ function AfficheCacheG() {
         FlecheGauche.removeEventListener("click", AfficheCacheG)
     }
     FlecheDroite.addEventListener("click", AfficheCacheD)
-
 }
 
 let sectionPlay;
@@ -57,7 +50,7 @@ sectionPlay = document.querySelector(".SectionButton-play");
 sectionPlay.addEventListener("click", playDiapo);
 
 function playDiapo() {
-    arret = setInterval(diapoImage, 2000);
+    arret = setInterval(diapoImage, 1500);
     function diapoImage() {
         AfficheCacheD()
     }
