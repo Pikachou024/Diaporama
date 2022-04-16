@@ -5,64 +5,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/styles.css">
     <title>Diapo</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header>
-        <nav class="HeaderPuce">
-            <div data-index="0" class="HeaderPuce01"></div>
-            <div data-index="1" class="HeaderPuce02"></div>
-            <div data-index="2" class="HeaderPuce03"></div>
-            <div data-index="3" class="HeaderPuce04"></div>
-            <div data-index="4" class="HeaderPuce05"></div>
-            <div data-index="5" class="HeaderPuce06"></div>
-            <div data-index="6" class="HeaderPuce07"></div>
-
-        </nav>
-
-    </header>
-
-    <section class="SectionPictures">
 
 
-        <div class="ListImages">
-
-            <img class="image01" src="IMG/image01.jpg" alt="">
-            <img class="image02" src="IMG/image02.jpg" alt="">
-            <img class="image03" src="IMG/image03.jpg" alt="">
-            <img class="image04" src="IMG/image04.jpg" alt="">
-            <img class="image05" src="IMG/image05.jpg" alt="">
-            <img class="image06" src="IMG/image06.jpg" alt="">
-            <img class="image07" src="IMG/images07.jpg" alt="">
+    <section class="ContentPicture">
+        <div class="ContentPicture-list">
+            <img class="ContentPicture-list-img affiche" src="IMG/image01.jpg" alt="">
+            <img class="ContentPicture-list-img" src="IMG/image03.jpg" alt="">
+            <img class="ContentPicture-list-img" src="IMG/image02.jpg" alt="">
+            <img class="ContentPicture-list-img" src="IMG/image04.jpg" alt="">
+            <img class="ContentPicture-list-img" src="IMG/image05.jpg" alt="">
+            <img class="ContentPicture-list-img" src="IMG/image06.jpg" alt="">
+            <img class="ContentPicture-list-img" src="IMG/images07.jpg" alt="">
 
         </div>
-
 
     </section>
 
-    <section class="SectionFleche">
-        <div class="SectionFleche-gauche">
+    <section class="NavPuce">
+        <nav class="NavPuce-listepuce">
+            <div data-index="0" class="NavPuce-listepuce-puce red"></div>
+            <div data-index="1" class="NavPuce-listepuce-puce"></div>
+            <div data-index="2" class="NavPuce-listepuce-puce"></div>
+            <div data-index="3" class="NavPuce-listepuce-puce"></div>
+            <div data-index="4" class="NavPuce-listepuce-puce"></div>
+            <div data-index="5" class="NavPuce-listepuce-puce"></div>
+            <div data-index="6" class="NavPuce-listepuce-puce"></div>
+        </nav>
+    </section>
+
+    <section class="ListButton">
+        <div class="ListButton-click gauche">
             <i class="fa-solid fa-arrow-left"></i>
         </div>
 
-        <div class="SectionFleche-droite">
+
+        <div class="ListButton-click">
+            <i class="fa-solid fa-circle-play"></i>
+        </div>
+        <div class="ListButton-click">
+
+            <i class="fa-solid fa-circle-pause hide"></i>
+        </div>
+
+        <div class="ListButton-click">
             <i class="fa-solid fa-arrow-right"></i>
         </div>
     </section>
 
+    <!-- <section class="NavFleche"> -->
 
-    <section class="SectionButton">
-        <div class="SectionButton-play">
-            <i class="fa-solid fa-circle-play"></i>
-        </div>
-        <div class="SectionButton-pause">
-            <i class="fa-solid fa-circle-pause"></i>
-        </div>
-    </section>
     <script src="https://kit.fontawesome.com/583f32a066.js" crossorigin="anonymous"></script>
-    <script src="Javascript/main.js"></script>
+
+
+    <!-- <script src="javascript/main.js"> </script> -->
+    <script src="javascript/cacheaffiche.js"></script>
+    <script src="javascript/imagesuivanteprecedente.js"></script>
+    <script src="javascript/playpause.js"></script>
+    <script src="javascript/puce.js"></script>
 </body>
 
 </html>
