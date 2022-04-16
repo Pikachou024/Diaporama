@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  background: url("../IMG/fondecran.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: repeat;
+  margin-top: 10%;
+}
+
+.NavPuce-listepuce {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.NavPuce-listepuce .NavPuce-listepuce-puce {
+  margin: 12px;
+  height: 20px;
+  width: 20px;
+  max-width: 100%;
+  border-radius: 50px;
+  background-color: black;
+}
+
+.NavPuce-listepuce .red {
+  background-color: red;
+}
+
+.ContentPicture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ContentPicture .ContentPicture-list-img {
+  display: none;
+  max-width: 100%;
+  min-width: 320px;
+}
+
+.ContentPicture .affiche {
+  border: 2px solid black;
+  display: block;
+}
+
+.ListButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ListButton .fa-arrow-left,
+.ListButton .fa-circle-play,
+.ListButton .fa-circle-pause,
+.ListButton .fa-arrow-right {
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  -webkit-transform: scale(3);
+          transform: scale(3);
+}
+
+.ListButton .hide {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
